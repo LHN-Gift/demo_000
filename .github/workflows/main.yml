@@ -32,16 +32,16 @@ jobs:
         run: |
           curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
 
-      # # List databricks repos
+      # List databricks repos
       - name: List databricks repos
         run: |
           databricks repos list
 
-      # # update databricks repos
-      # - name: Update databricks repos
+      # Update databricks repos
+      - name: Update databricks repos
         
-      #   run: |
-      #     databricks repos update /Repos/GitHub/ML-demo-0 --branch main
+        run: |
+          databricks repos update /Repos/GitHub/demo_000 --branch main
         
       # Runs a single command using the runners shell
       - name: Run a one-line script
