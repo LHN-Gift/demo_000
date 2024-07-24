@@ -39,10 +39,14 @@ jobs:
 
       # Update databricks repos
       - name: Update databricks repos
-        
         run: |
           databricks repos update /Repos/GitHub/demo_000 --branch main
-        
+
+      # Run job
+      - name: Run workflow
+        run: |
+          databricks jobs run-now --job-id 723786334173659
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
