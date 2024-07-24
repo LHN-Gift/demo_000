@@ -3,8 +3,8 @@
 name: CI
 
 env:
-  DATABRICKS_HOST: ${{ vars.LHN_DEV_DATABRICKS_HOST }}
-  DATABRICKS_TOKEN: ${{ secrets.LHN_DEV_DATABRICKS_TOKEN }}
+  DATABRICKS_HOST: ${{ vars.LHN_PROD_DATABRICKS_HOST }}
+  DATABRICKS_TOKEN: ${{ secrets.LHN_PROD_DATABRICKS_TOKEN }}
 
 # Controls when the workflow will run
 on:
