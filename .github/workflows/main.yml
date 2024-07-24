@@ -46,7 +46,7 @@ jobs:
       - name: Run notebook
         uses: databricks/run-notebook@v0
         with:
-          local-notebook-path: /Workspace/Users/admin@lhngift.com/Work/demo_000/source/demo_notebook.py
+          local-notebook-path: ./source/demo_notebook.py
           databricks-host: ${{ vars.LHN_PROD_DATABRICKS_HOST }}
           databricks-token: ${{ secrets.LHN_PROD_DATABRICKS_TOKEN }}
           new-cluster-json: >
