@@ -55,14 +55,14 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      # Setup python
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.9
-      # Run python code:
-      - name: Run Python code
-        run: |
-          echo Running hello_world.py....
-          echo "Writed by ${{ env.GBL_name }}"
-          python3 hello_world.py
+      # # Setup python
+      # - name: Setup Python
+      #   uses: actions/setup-python@v5
+      #   with:
+      #     python-version: 3.9
+      # # Run python code:
+      # - name: Run Python code
+      #   run: |
+      #     echo Running hello_world.py....
+      #     echo "Writed by ${{ env.GBL_name }}"
+      #     python3 hello_world.py
