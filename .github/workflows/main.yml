@@ -33,9 +33,9 @@ jobs:
           curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
 
       # # List databricks repos
-      # - name: List databricks repos
-      #   run: |
-      #     databricks repos list
+      - name: List databricks repos
+        run: |
+          databricks repos list
 
       # # update databricks repos
       # - name: Update databricks repos
