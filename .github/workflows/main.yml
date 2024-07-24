@@ -45,7 +45,7 @@ jobs:
       # Run job
       - name: Run workflow
         run: |
-          databricks jobs run-now --job-id 723786334173659
+          databricks jobs run-now 723786334173659
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
